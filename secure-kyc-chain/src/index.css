@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Black, White, Deep Grey, Parrot Green Theme */
+    --background: 0 0% 100%; /* White */
+    --foreground: 0 0% 10%; /* Near black */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 0 0% 10%; /* Near black */
+
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 0 0% 10%; /* Near black */
+
+    --primary: 142 76% 36%; /* Parrot Green */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 0 0% 95%; /* Light grey */
+    --secondary-foreground: 0 0% 10%; /* Near black */
+
+    --muted: 0 0% 96%; /* Very light grey */
+    --muted-foreground: 0 0% 45%; /* Deep grey */
+
+    --accent: 142 76% 36%; /* Parrot Green */
+    --accent-foreground: 0 0% 100%; /* White */
+
+    --success: 142 76% 36%; /* Parrot Green */
+    --success-foreground: 0 0% 100%; /* White */
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 85%; /* Light grey border */
+    --input: 0 0% 90%; /* Light grey input */
+    --ring: 142 76% 36%; /* Parrot Green ring */
+
+    --radius: 0.75rem;
+
+    --chart-1: 142 76% 36%; /* Parrot Green */
+    --chart-2: 0 0% 45%; /* Deep grey */
+    --chart-3: 38 92% 50%;
+    --chart-4: 0 84% 60%;
+    --chart-5: 263 70% 50%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 45%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 45%));
+    --shadow-soft: 0 2px 8px -2px hsl(0 0% 0% / 0.1);
+    --shadow-medium: 0 4px 16px -4px hsl(0 0% 0% / 0.15);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 0 0% 10%; /* Near black */
+    --foreground: 0 0% 98%; /* Near white */
+
+    --card: 0 0% 15%; /* Deep grey */
+    --card-foreground: 0 0% 98%; /* Near white */
+
+    --popover: 0 0% 15%; /* Deep grey */
+    --popover-foreground: 0 0% 98%; /* Near white */
+
+    --primary: 142 76% 36%; /* Parrot Green */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 0 0% 20%; /* Dark grey */
+    --secondary-foreground: 0 0% 98%; /* Near white */
+
+    --muted: 0 0% 20%; /* Dark grey */
+    --muted-foreground: 0 0% 65%; /* Medium grey */
+
+    --accent: 142 76% 36%; /* Parrot Green */
+    --accent-foreground: 0 0% 100%; /* White */
+
+    --success: 142 76% 36%; /* Parrot Green */
+    --success-foreground: 0 0% 100%; /* White */
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 10%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 25%; /* Dark grey border */
+    --input: 0 0% 20%; /* Dark grey input */
+    --ring: 142 76% 36%; /* Parrot Green ring */
+
+    --chart-1: 142 76% 36%; /* Parrot Green */
+    --chart-2: 0 0% 65%; /* Medium grey */
+    --chart-3: 38 92% 50%;
+    --chart-4: 0 84% 60%;
+    --chart-5: 263 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
